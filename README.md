@@ -1,2 +1,2 @@
 # momontom
-Cloning monemtum(chrome web app) with VanillaJS
+Cloning monemtum(chrome extension) with VanillaJS
