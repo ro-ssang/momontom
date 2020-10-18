@@ -8,26 +8,64 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/css/styles.css" />
-    <title>Momontum</title>
+    <title>Momontom</title>
   </head>
   <body>
-    <!-- Clock -->
-    <h1 id="clock"></h1>
+    <div class="momontom">
+      <header class="header">
+        <!-- Clock -->
+        <h3 id="clock" class="header__clock"></h3>
+        <!-- Weather -->
+        <span id="weather" class="header__weather"></span>
+      </header>
 
-    <!-- User name -->
-    <form id="userNameForm" class="user-name-form" action="#" method="#">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h3 id="userName" class="user-name hidden"></h3>
+      <main class="main">
+        <!-- User namne and forms -->
+        <section class="user-namne-and-forms">
+          <!-- User name -->
+          <div class="user-name">
+            <h2 id="userNameGreeting" class="user-name__greeting">Hello,</h2>
+            <h1 id="siteName" class="user-name__site-name">Momontom</h1>
+            <div id="userNameWrapper" class="user-name__wrapper hidden">
+              <h1 id="userName" class="user-name__name"></h1>
+              <span id="editBtn" class="user-name__edit-btn">
+                <i class="fas fa-edit"></i>
+              </span>
+            </div>
+            <form
+              id="userNameForm"
+              class="user-name__form"
+              action="#"
+              method="#"
+            >
+              <input type="text" placeholder="What is your name?" />
+            </form>
+          </div>
 
-    <!-- To Do List -->
-    <form id="toDoForm" action="#" method="#">
-      <input type="text" placeholder="Tell me what you want to do!" />
-    </form>
-    <ul id="toDoList"></ul>
+          <!-- To do form -->
+          <form id="toDoForm" class="to-do-form" action="#" method="#">
+            <input type="text" placeholder="Tell me what you're going to do?" />
+          </form>
+        </section>
+
+        <!-- To do list -->
+        <section id="toDoList" class="to-do-list hidden">
+          <article class="to-do-list__pending">
+            <h5 class="to-do-list__title">Pending</h5>
+            <ul id="pending-list"></ul>
+          </article>
+          <article class="to-do-list__finished">
+            <h5 class="to-do-list__title">finished</h5>
+            <ul id="finished-list"></ul>
+          </article>
+        </section>
+      </main>
+    </div>
 
     <script src="src/js/clock.js"></script>
     <script src="src/js/userName.js"></script>
     <script src="src/js/toDo.js"></script>
+    <script src="src/js/weather.js"></script>
+    <script src="src/js/bg.js"></script>
   </body>
 </html>

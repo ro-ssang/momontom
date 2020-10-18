@@ -1,0 +1,12 @@
+.momontom {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 50px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--margin3x);
+}

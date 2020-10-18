@@ -1,0 +1,22 @@
+.to-do-form.hidden {
+  display: none;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.to-do-form {
+  margin-left: calc(var(--marginSmall) * 2);
+  animation: slideInFromRight 1s ease-in-out;
+}

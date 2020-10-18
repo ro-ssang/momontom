@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  text-align: right;
+}
+
+.header__clock {
+  font-size: var(--fontLarge);
+  letter-spacing: 2px;
+  min-height: 48px;
+}
+
+.header__weather {
+  display: block;
+  margin-top: calc(var(--marginSmall) + 6px);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}

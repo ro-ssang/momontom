@@ -1,0 +1,67 @@
+.user-name__name.hidden,
+.user-name__form.hidden,
+.user-name__site-name.hidden,
+.user-name__wrapper.hidden {
+  display: none;
+}
+
+.user-name__greeting {
+  margin-left: calc(var(--marginSmall) * 2);
+  margin-bottom: var(--marginMedium);
+  font-size: var(--font2x);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.user-name__site-name,
+.user-name__wrapper {
+  padding: var(--paddingSmall) calc(var(--paddingSmall) * 2);
+  margin-bottom: calc(var(--marginSmall) * 7);
+  font-size: var(--font3x);
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.user-name__wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.user-name__wrapper:hover .user-name__edit-btn {
+  display: block;
+}
+
+.user-name__edit-btn {
+  display: none;
+  margin-left: var(--margin2x);
+  font-size: var(--fontMedium);
+  cursor: pointer;
+}
+
+.user-name__edit-btn:hover {
+  color: var(--greyColor);
+}
+
+.user-name__site-name {
+  background-color: var(--accentColor);
+  color: var(--whiteColor);
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.user-name__form {
+  margin-left: calc(var(--marginSmall) * 2);
+  animation: slideInFromRight 1s ease-in-out;
+}

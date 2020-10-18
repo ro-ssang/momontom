@@ -1,4 +1,39 @@
-.user-name-form.hidden,
-.user-name.hidden {
-  display: none;
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+@import "./variables.css";
+
+/* Partials */
+@import "./partials/header.css";
+@import "./partials/userName.css";
+@import "./partials/toDoForm.css";
+@import "./partials/toDoList.css";
+
+/* Pages */
+@import "./pages/momontom.css";
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding3x) 0;
+  animation: fadeIn 1.5s ease-in-out;
 }
